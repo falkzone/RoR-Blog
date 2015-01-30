@@ -1,0 +1,25 @@
+<nav class="top-bar" data-options="is_hover:false">
+  <ul class="title-area">
+    <li class="name">
+      <h1>
+        <%= link_to 'Demo Blog ', root_path %>
+      </h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+  <section class="top-bar-section">
+    <ul class="right">
+      <li>
+        <%= link_to 'Home', '/' %>
+      </li>
+<% if current_user %>
+      <li><%= link_to "Edit Profile", edit_user_path(current_user.id) %></li>
+    <% else %>
+      <li><%= link_to "Register", new_user_path %></li>
+<% end %>
+      <li>
+        <%= link_to 'Contact', '/contact' %>
+      </li>
+    </ul>
+  </section>
+</nav>

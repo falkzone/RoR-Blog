@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= auto_discovery_link_tag(:atom, posts_path(:atom)) %>
+</head>
+<body>
+<div id="wrapper">
+  <%= render :partial => 'layouts/header' %>
+  
+  <div class="spacer"></div>
+ 
+  <div id="main">
+    <%= yield %>
+  </div>
+  
+	<%= render :partial => 'layouts/sidebar' %> 
+	
+  <div class="spacer"></div> 
+</div>
+  
+<%= render :partial => 'layouts/footer' %>
+</body>
+</html>
