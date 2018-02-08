@@ -4,7 +4,7 @@ GEM
     actionmailer (3.2.19)
       actionpack (~> 3.2.22.2)
       mail (~> 2.5.4)
-    actionpack (3.2.19)
+    actionpack (~> 3.2.22.2 )
       activemodel (~> 3.2.19)
       activesupport (~> 3.2.19)
       builder (~> 3.0.0)
