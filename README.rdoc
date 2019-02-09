@@ -1,4 +1,4 @@
-(Ruby Web-Blog)
+(Ruby on Rails Web-Blog)
 
 
 == Getting Started
